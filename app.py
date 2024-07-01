@@ -34,7 +34,7 @@ def generate():
     if request.method=='POST':
         input_prompt = request.form['prompt']
         processed_response = get_prompt_response(input_prompt)
-        return render_template('index.html', result=processed_response)
+        return render_template('index.html',prompt=input_prompt, generated_text=processed_response)
 
     return render_template('index.html')
     

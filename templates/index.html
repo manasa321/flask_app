@@ -55,13 +55,13 @@
                     <button type="submit" style="color:black">Generate Output</button>
                 </form>
 
-                {% if user_input %}
+                {% if prompt %}
                 <hr>
                 <h1>Processed Output</h1>
                 <h2>Input:</h2>
-                <p>{{ user_input }}</p>
+                <p>{{ prompt }}</p>
                 <h2>Processed Output:</h2>
-                <p>{{ processed_output }}</p>
+                <p style="color:orange;">{{ generated_text }}</p>
                 {% endif %}
 
             </div>
